@@ -18,11 +18,14 @@ fetchHousesJson().then(house => {
         
         houseSection.innerHTML += `
             
-            <img src="${image}" alt="">
-            <div>id. ${id}</div>
-            <p>El Precio es ${price}</p>
-            <p>Esta en ${city}</p>
-            <div>info : ${description}</div>
+            <div class="card" style="width: 18rem;">
+            <img src="${image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${id}. ${city} ${price}€</h5>
+                <p class="card-text">${description}</p>
+            </div>
+           
+            </div>
 
         `
 
